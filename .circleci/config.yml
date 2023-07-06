@@ -7,14 +7,14 @@ version: 2.1
 jobs:
   print-hello:
     docker:
-      - image: circleci/node:13.8.0
+      - image: cimg/node:13.8.0
     steps:
       - run:
           name: "Print Hello"
           command: "echo Hello, "
   print-world:
     docker:
-      - image: circleci/node:13.8.0
+      - image: cimg/node:13.8.0
     steps:
       - run:
           name: "Print World"
