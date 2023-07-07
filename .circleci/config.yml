@@ -19,6 +19,13 @@ jobs:
       - run:
           name: "Print World"
           command: "echo World!"
+  print-env-var:
+    docker:
+      - image: cimg/node:13.8.0
+    steps:
+      - run:
+          name: "Print variable"
+          command: "echo $PROJECT_AUTHOR"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
