@@ -35,3 +35,4 @@ workflows:
       - print-world:
           requires: 
             - print-hello
+      - print-env-var
